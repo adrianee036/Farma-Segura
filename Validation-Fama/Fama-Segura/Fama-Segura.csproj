@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Fama_Segura</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fama-Segura.Core.Application\Fama-Segura.Core.Application.csproj" />
+    <ProjectReference Include="..\Fama-Segura.Core.Domain\Fama-Segura.Core.Domain.csproj" />
+    <ProjectReference Include="..\Fama-Segura.Infrastructure.Identity\Fama-Segura.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\Fama-Segura.Infrastructure.Persistence\Fama-Segura.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\Fama-Segura.Infrastructure.Shared\Fama-Segura.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

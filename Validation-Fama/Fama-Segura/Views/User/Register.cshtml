@@ -1,0 +1,125 @@
+﻿@using Fama_Segura.Core.Application.ViewModels.User;
+@model SaveUserViewModel
+
+@{
+    ViewData["Title"] = "Registro";
+}
+                       
+<body>
+
+    <div class="container mt-3 col-md-6 col-sm-8 col-xl-4 col-lg-5 offset-md-3 offset-xl-4 offset-lg-3">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>Registro de Usuario</h1>
+            </div>
+            <div class="card-body">
+                <form method="post" asp-controller="User" asp-action="Register" enctype="multipart/form-data">
+                    <div class="form-group mt-1 mb-2">
+                        <input type="text" asp-for="Username" class="form-control bg-white" placeholder="Ingrese el Nombre de Usuario">
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input asp-for="FirstName" class="form-control bg-white" placeholder="Ingrese el Nombre">
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input asp-for="LastName" class="form-control bg-white" placeholder="Ingrese el Apellido">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input asp-for="Email" class="form-control bg-white" placeholder="Ingrese el Correo">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input asp-for="Cedula" class="form-control bg-white" placeholder="Ingrese la Cedula" maxlength="11">
+                        <span asp-validation-for="Cedula" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" asp-for="Password" class="form-control bg-white" placeholder="Ingrese la Contraseña">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" asp-for="ConfirmPassword" class="form-control bg-white" placeholder="Ingrese la Contraseña">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input asp-for="Phone" class="form-control bg-white" placeholder="Ingrese el Número de télefono">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                  
+                    <div class="form-group text-center mb-2">
+                        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-btn-warning">Volver atrás</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
+
+<script>
+    var passwordInput = document.getElementById("passwordInput");
+    var togglePassword = document.getElementById("togglePassword");
+
+    togglePassword.addEventListener("click", function () {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            togglePassword.classList.remove("fa-eye-slash");
+            togglePassword.classList.add("fa-eye");
+        } else {
+            passwordInput.type = "password";
+            togglePassword.classList.remove("fa-eye");
+            togglePassword.classList.add("fa-eye-slash");
+        }
+    });
+</script>
+
+<style>
+    .card-header {
+        background-color: aquamarine;
+        color: black;
+    }
+
+    .btn-primary {
+        background-color: #8ED1FC;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #6EC6FF;
+        }
+
+    .btn-warning {
+        background-color: lightyellow;
+        color: white;
+        border: none;
+    }
+
+        .btn-waring:hover {
+            background-color: lightgoldenrodyellow;
+        }
+
+    .btn-dark {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .form-control {
+        background-color: white;
+    }
+
+    .text-center {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+
+
+

@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header text-center">
+            <h1>FarmaLab</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6 offset-3 mb-4">
+                    <a asp-controller="User" asp-action="Index" class="btn btn-info mb-2">Iniciar Sesión</a>
+                    <p class="text-center">o</p>
+                    <a asp-controller="User" asp-action="Register" class="btn btn-info">Registrarse</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .card-header {
+        background-color: aquamarine;
+    }
+
+    .btn-info {
+        background-color: #8ED1FC;  
+    }
+
+    .btn-info {
+        color: white; 
+        width: 100%; 
+    }
+
+        .btn-info:hover {
+            background-color: #6EC6FF; 
+        }
+
+    .card-footer {
+        background-color: #343A40;
+        height: 80px; 
+    }
+
+    .text-center {
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+</style>
