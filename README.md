@@ -5,6 +5,8 @@ Enlace del Azure DevOps del proyecto: https://dev.azure.com/2020107420753/Fama-S
 Sistema de verificacion de farmacos para las farmacias el cual validara que los medicamentos este devidamente avalados por Dirección Nacional de Control de Drogas | DNCD.
 ![image](https://github.com/user-attachments/assets/3ff8e1c8-6be1-4e3c-96dd-12195ac47c8b)
 
+![image](https://github.com/user-attachments/assets/6657a073-a8e3-482e-927e-732294d60bea)
+
 ![image](https://github.com/user-attachments/assets/29da722e-a05f-4c19-9b38-236df54954fd)
 
 
