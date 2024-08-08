@@ -1,4 +1,5 @@
-Proyecto hecho en equipo con metolodogia agil SCRUM
+Proyecto hecho en equipo con metolodogia agil SCRUM.
+
 Enlace del Azure DevOps del proyecto: https://dev.azure.com/2020107420753/Fama-Segura
 
 Sistema de verificacion de farmacos para las farmacias el cual validara que los medicamentos este devidamente avalados por Dirección Nacional de Control de Drogas | DNCD.
